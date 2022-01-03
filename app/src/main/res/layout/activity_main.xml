@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000234"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDownloadDirectory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="lets Make Directory to download" />
+
+                <Button
+                    android:id="@+id/btnMusicDirectory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="LetsMakeDirectore to music" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDocumentFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="lets make directory to make document folder" />
+
+                <Button
+                    android:id="@+id/btnRingTonesFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="lets make directory to rigtone folder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnProdcastFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="let s make directory to prodcast" />
+
+                <Button
+                    android:id="@+id/btnMoviesFolder"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="lets make directory to movies folder" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnPictureFolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="lets make directory to picture folder" />
+
+            <Button
+                android:id="@+id/btnAlarmFolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lets make directory to Alarm Folder" />
+
+            <EditText
+                android:id="@+id/edtValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <Button
+                android:id="@+id/btnSaveFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save it into document folder in sd card" />
+
+            <TextView
+                android:id="@+id/txtValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnRetriveInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Retrive the Information from sd card" />
+
+            <ImageView
+                android:id="@+id/animal"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bitcoin" />
+
+            <Button
+                android:id="@+id/btnAllowAccessPicture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Allow Access Picture in SD card" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScroolView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutHorizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
